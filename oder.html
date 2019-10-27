@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Order</title>
+  </head>
+  <body>
+        <!--###################################################################################################################################################################################################################-->
+        <div class="container">
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <a class="navbar-brand" href="#">AdminCO</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Orders <span class="sr-only">(current)</span></a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Catalog </a>
+                        </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                    </nav>
+                </div>
+                <div class="d-flex flex-row flex-wrap justify-content-between p-0 pt-3">
+                    <!--JUMBOTRON-->
+                    <div class="jumbotron col-12 col-md-3 p-3" >
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item pt-0 pl-0 font-weight-bold" style="background: rgba(0, 0, 0, 0);">Order info:</li>
+                            <li class="list-group-item" style="background: rgba(0, 0, 0, 0);">Product cost: $800.00</li>
+                            <li class="list-group-item" style="background: rgba(0, 0, 0, 0);">Delivery cost: $25.00</li>
+                            <li class="list-group-item" style="background: rgba(0, 0, 0, 0);">Discount: -$75.00</li>
+                            <li class="list-group-item text-center font-weight-bolder " style="background: rgba(0, 0, 0, 0);">Total: $750.00</li>
+                        </ul>
+                    </div>
+                    <!--JUMBOTRON-->
+                    <!--FORM--> 
+                    <div class="col-12 col-md-9 p-0 pl-md-4">
+                        <form>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                <label for="validationDefault01">First name</label>
+                                <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="" required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                <label for="validationDefault02">Last name</label>
+                                <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="" required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                <label for="validationDefaultUsername">Username</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                <label for="validationDefault03">City</label>
+                                <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                <label for="validationDefault04">State</label>
+                                <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                <label for="validationDefault05">Zip</label>
+                                <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary float-right" type="submit">Apply changes</button>
+                        </form>
+                    </div>  
+                    <!--FORM-->   
+             
+                </div>
+                <div class="table-responsive pt-3">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                            <th style="width:4%"scope="col">#</th>
+                            <th style="width:40%" scope="col">Product</th>
+                            <th style="width:22%"scope="col">Quantity</th>
+                            <th style="width:22%"scope="col">Price</th>
+                            <th style="width:22%"scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>Cat</td>
+                            <td>250</td>
+                            <td>$2.00</td>
+                            <td>$500.00</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>Doge</td>
+                            <td>5</td>
+                            <td>$60.00</td>
+                            <td>$300.00</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td>Wow</td>
+                            <td>1</td>
+                            <td>Free</td>
+                            <td>$0.00</td>
+                            </tr>
+                            <tr>
+                            <th class="text-right" colspan="4">Total:</th>
+                            <td>$800.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
+
+        </div>
+        <!--###################################################################################################################################################################################################################-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
